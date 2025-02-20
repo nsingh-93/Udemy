@@ -1,36 +1,20 @@
-// Suboptimal because we're assigning types to code that TS can infer
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
-//   name: "Neil",
-//   age: 31,
-// };
-var person = {
-    name: "Neil",
-    age: 31,
-};
-console.log(person);
-console.log(person.name);
-/********************* NESTED OBJECT **********************************
-// Having a nested object like
-const product = {
-  id: "abc1",
-  price: 12.99,
-  tags: ["great-offer", "hot-and-new"],
-  details: {
-    title: "Red Carpet",
-    description: "A great carpet - almost brand-new!",
-  },
-};
-// would make the object type as such
-{
-    id: string;
-    price: number;
-    tags: string[];
-    details: {
-        title: string;
-        description: string;
-    }
+// Unknown type because we don't know what the user will put in
+var userInput;
+// Unknown can store any type without errors
+var userName;
+userInput = 32;
+userInput = "Test string";
+// Unknowns can't be assigned to explicitly typed variables, but any can
+// userName = userInput;
+// Need type check to assign value of unknown type to value of fixed type
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-*********************************************************************/
+// Never type is used for functions that throw an error
+// and never return a value or are an infinite loop
+// void is asssumed for these return types, but never is clearer
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+    // while (true) {}
+}
+generateError("An error occurred", 500);
