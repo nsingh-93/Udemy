@@ -105,7 +105,8 @@
   "exclude": [
     "node_modules", // already excluded by default
     "Basics and Basic Types",
-    "Compiler Configuration"
+    "Compiler Configuration",
+    "Next Gen JS"
   ]
   // Include means all the files that need to be compiled have to be in the array
   // "include": []
