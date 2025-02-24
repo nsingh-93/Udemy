@@ -109,7 +109,8 @@
     "Next Gen JS",
     "Classes and Interfaces",
     "Advanced Types",
-    "Generics"
+    "Generics",
+    "Decorators"
   ]
   // Include means all the files that need to be compiled have to be in the array
   // "include": []
