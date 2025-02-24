@@ -108,7 +108,8 @@
     "Compiler Configuration",
     "Next Gen JS",
     "Classes and Interfaces",
-    "Advanced Types"
+    "Advanced Types",
+    "Generics"
   ]
   // Include means all the files that need to be compiled have to be in the array
   // "include": []
