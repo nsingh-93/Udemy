@@ -110,7 +110,8 @@
     "Classes and Interfaces",
     "Advanced Types",
     "Generics",
-    "Decorators"
+    "Decorators",
+    "Practice"
   ]
   // Include means all the files that need to be compiled have to be in the array
   // "include": []
